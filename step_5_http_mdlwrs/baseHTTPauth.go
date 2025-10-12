@@ -1,4 +1,16 @@
-package main
+/*
+Пример успешного запроса:
+
+curl -u john:secret http://localhost:8080/answer/
+# Welcome, john!
+Пример неуспешного запроса:
+
+curl http://localhost:8080/answer/
+# HTTP/1.1 401 Unauthorized
+# WWW-Authenticate: Basic realm="Restricted"
+*/
+package step5httpmdlwrs
+
 
 import (
 	"context"
